@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+header{
+    width: 100%;
+    min-height: 10vh;
+    padding: 0rem 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background: transparent;
+    /* position: fixed; */
+    z-index: 5;
+}
+.logo{
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5rem;
+    color: #6c5ce7;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.logo span{
+    color: #272343;
+}
+nav{
+    margin-top: 10px;
+    /* width: 50%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav a{
+    padding: 0rem 1rem;
+    font-family: 'Fira Sans', sans-serif;
+    text-transform: uppercase;
+    color: #272343;
+    font-weight: 600;
+    overflow: hidden;
+    transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    letter-spacing: 2px;
+    position: relative;
+}
+nav a:before{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #345B63;
+    position: absolute;
+    top: calc(50% - 1.5px);
+    transition: inherit;
+    right: 0;
+}
+nav a:hover:before{
+    left: 0;
+    width: 50%;
+}
+nav a:hover{
+    color: #6c5ce7;
+}
+.active{
+    color: #6c5ce7;
+}
+.menu-btn{
+    display: inline-block;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    color: #000;
+    cursor: pointer;
+    background: transparent;
+    display: none;
+    transition:0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.menu-btn:hover{
+    color: #272343;
+}
+.close-btn{
+    display: none;
+}
+.slogan{
+    display: none;
+}
+
+@media screen and (max-width: 1400px) {
+    header{
+        padding: 0rem 3rem;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        min-height: 10vh;
+        padding: 0rem 1.3rem;
+    }
+    .logo{
+        font-size: 1.3rem;
+        letter-spacing: 0px;
+    }
+    .menu-btn{
+        display:block;
+    }
+    nav{
+        position: fixed;
+        top: -1%;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background: #6c5ce7;
+        color: #272343;
+        transition: 1s;
+        transform: translateY(-200vh);
+        z-index: 3;
+    }
+    nav a{
+        background: transparent;
+        color: #272343;
+        font-size: 1rem;
+        font-weight: 800;
+        color: #fff;
+    }
+    nav a:hover{
+        color: #000;
+    }
+    .active{
+        color: #fff;
+    }
+    header .responsive{
+        transform: none;
+        display: flex;
+        flex-direction: column;
+    }
+    .close-btn{
+        display: block;
+        position: absolute;
+        right: 5%;
+        top: 3%;
+        border: none;
+        background: #6c5ce7;
+        font-size: 30px;
+        color: #272343;
+    }
+    .slogan{
+        display: block;
+        position: absolute;
+        color: #272343;
+        bottom: 10%;
+        text-align: center;
+        background: #6c5ce7;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    .slogan span{
+        background: #6c5ce7;
+    }
+}
+

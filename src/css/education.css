@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+.edu{
+    padding: 5rem 5rem;
+}
+
+.edu h1{
+    font-family: 'Anton', sans-serif;
+    color: #6c5ce7;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 2rem;
+}
+.sect-1, .sect-2{
+    margin-top: 50px;
+    padding: 0rem 3rem;
+}
+.sect-1 .edu-card, .sect-2 .edu-card{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    margin-top: 20px;
+    /* padding: 1rem 2rem; */
+}
+.sect-1 .edu-card .icon, .sect-2 .edu-card .icon{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin-right: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: #6c5ce7;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 50%;
+}
+.edu-info h4{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1rem;
+    color: #6c5ce7;
+    letter-spacing: 2px;
+}
+.edu-info h4 span{
+    margin-left: 30px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.sect-1 .edu-info h2, .sect-2 .edu-info h2{
+    font-family: 'Fira Sans', sans-serif;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    font-weight: 800; 
+    font-size: 1.3rem;
+}
+.edu-info h2 span{
+    margin-left: 10px;
+    font-size: 1rem;
+}
+.edu-info h3{
+    margin-top: 10px;
+    font-family: 'Fira Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1rem;
+
+}
+.c-t{
+    margin-top: 50px;
+}
+
+
+@media screen and (max-width: 1300px) {
+    .edu{
+        padding: 2rem 2rem;
+    }
+    .edu h1{
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
+    .sect-1 .edu-card .icon, .sect-2 .edu-card .icon{
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+    }
+    .edu-card h4{
+        font-size: 15px;
+    }
+    .sect-1 .edu-info h2, .sect-2 .edu-info h2{
+        font-size: 19px;
+        letter-spacing: 0px;
+        color: rgba(0, 0, 0, 0.397);
+    }
+    .edu-info h3{
+        margin-top: 5px;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        font-size: 16px;
+    }
+    .edu-info h2 span{
+        font-size: 12px;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .edu{
+        padding: 10rem 2rem;
+    }
+    .sect-1, .sect-2{
+        padding: 0rem 1rem;
+    }
+    .edu-card h4{
+        font-size: 10px;
+    }
+    .edu-card h4 span{
+        margin-left: 10px;
+        font-size: 10px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+    .sect-1 .edu-info h2, .sect-2 .edu-info h2{
+        font-size: 15px;
+        letter-spacing: 0px;
+        color: rgba(0, 0, 0, 0.397);
+    }
+    .sect-1 .edu-card .icon, .sect-2 .edu-card .icon{
+        display: none;
+    }
+    .edu-info h3{
+        margin-top: 5px;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        font-size: 13px;
+    }
+    .edu-info h2 span{
+        font-size: 12px;
+    }
+    .edu-info{
+        margin-left: -20px;
+    }
+    .sect-1 .edu-card, .sect-2 .edu-card{
+        display: grid;
+        grid-template-columns: 8fr;
+    }
+    .sect-1 .edu-card::after, .sect-2 .edu-card::after{
+        content: '';
+        width: 20%;
+        height: 1px;
+        margin-top: 10px;
+        background: rgba(0, 0, 0, 0.11);
+    }
+}
+
+@media screen and (max-width: 500px){
+    .edu{
+        padding-bottom: 10rem ;
+        padding-top: 3rem;
+    }
+    .sect-1 .edu-info h2, .sect-2 .edu-info h2{
+        font-size: 12px;
+        letter-spacing: 0px;
+        font-weight: 800;
+        color: rgba(0, 0, 0, 0.397);
+    }
+    .edu-info h2 span {
+        font-size: 9px;
+        margin-left: 2px;
+    }
+}

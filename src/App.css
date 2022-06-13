@@ -1,0 +1,18 @@
+*{
+  padding: 0rem;
+  margin: 0rem;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+ul{
+  list-style: none;
+}
+
+/* #BAE8E8 */
+/* #FFD803 */
+/* #272343 */
