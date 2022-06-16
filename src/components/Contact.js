@@ -3,7 +3,7 @@ import '../css/contact.css'
 import {CgPhone} from 'react-icons/cg'
 import {SiMinutemailer} from 'react-icons/si'
 import {MdMyLocation} from 'react-icons/md'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-scroll'
 import emailjs from 'emailjs-com'
 
 
@@ -47,10 +47,10 @@ const Contact = () => {
         <section className="sec-3">
         <h3>Useful Links</h3>
         <ul className="useful-links">
-          <li><Link to="#">Home</Link></li>
-          <li><Link to="#">About</Link></li>
-          <li><Link to="#">Portfolio</Link></li>
-          <li><Link to="#">Projects</Link></li>
+          <li><Link to="home-section" smooth={true} spy={true}>Home</Link></li>
+          <li><Link to="about-section" smooth={true} spy={true}>About</Link></li>
+          <li><Link to="services-section" smooth={true} spy={true}>Services</Link></li>
+          <li><Link to="projects-section" smooth={true} spy={true}>Projects</Link></li>
         </ul>
         </section>
     </section>
