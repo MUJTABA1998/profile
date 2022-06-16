@@ -10,7 +10,7 @@ export const experience = [
     {
         id: 2,
         title: "IT Consultant",
-        duration: "Aug 2017 - Nov 2018",
+        duration: "Aug 2017 - Jun 2018",
         city: "Faisalabad",
         employer: "Kay & Emms",
         details: "Collaborate with IT team to make ensure that everything perfect on employee computers."

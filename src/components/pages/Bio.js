@@ -16,7 +16,7 @@ const Bio = () => {
         <li>Email : <span>mianmujtabaasif1@gmail.com</span></li>
         <li>Phone : <span>+92 304-6578361</span></li>
       </ul>
-      <a href='/'>Download CV</a>
+      <a href='#' download='Mujtaba.pdf'>Download CV</a>
     </section>
   )
 }
